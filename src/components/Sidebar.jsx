@@ -32,8 +32,10 @@ const Sidebar = () => {
                 onClick={handleCloseSideBar}
                 className="items-center gap-3 flex ml-3 mt-4 text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
               >
-                <SiShopware />
-                <span className="text-xl font-bold">Shopfy</span>
+                <SiShopware 
+                  style={{ color: currentColor }}
+                />
+                <span style={{color: currentColor}} className="text-xl font-bold">Dashboard</span>
               </Link>
               <TooltipComponent content="Menu" position="BottomCenter">
                 <button
